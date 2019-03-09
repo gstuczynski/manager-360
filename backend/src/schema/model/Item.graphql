@@ -1,0 +1,5 @@
+type Item {
+  id: Int
+  img: String
+  desc: String
+}

@@ -1,0 +1,8 @@
+type Query {
+  items: [Item]
+}
+
+type Mutation {
+  itemSave(id: Int, img: String, desc: String): Item
+  itemDelete(id: Int): Boolean
+}
