@@ -18,8 +18,14 @@ export class ItemsController {
 
   @Mutation()
   itemSave(args) {
+    console.log("aa", args);
     const item = this.entityManager.create(Item, args);
     return this.entityManager.save(Item, item);
+  }
+
+  @Mutation()
+  async uploadFile(file) {
+    console.log("aaaa", file);
   }
 
   @Mutation()
